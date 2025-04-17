@@ -5,7 +5,7 @@ const ServiecsPage = () => {
   return (
     <div className="flex flex-wrap justify-center">
       <h1 className="w-full text-5xl text-center">خدماتنا</h1>
-      <div className="flex justify-between flex-wrap md:flex-nowrap items-center gap-10 w-9/12">
+      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-10 w-full p-4 md:w-2/4 ">
         <Image
           alt=""
           src={image15}

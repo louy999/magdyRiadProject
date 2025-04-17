@@ -23,14 +23,7 @@ const Navbar = () => {
             عملاءنا
           </Link>
         </li>
-        <li>
-          <Link
-            className="hover:text-2xl duration-300 hover:font-bold"
-            href="/"
-          >
-            خدماتنا
-          </Link>
-        </li>
+
         <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
