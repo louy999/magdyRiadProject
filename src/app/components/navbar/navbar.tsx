@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
-            href="/"
+            href="/contact"
           >
             الاتصال بنا
           </Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
         <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
-            href="/"
+            href="/clients"
           >
             عملاءنا
           </Link>
@@ -27,7 +27,16 @@ const Navbar = () => {
         <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
-            href="/"
+            href="/services"
+          >
+            خدماتنا
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            className="hover:text-2xl duration-300 hover:font-bold"
+            href="/projects"
           >
             المشروعات
           </Link>
@@ -35,7 +44,7 @@ const Navbar = () => {
         <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
-            href="/"
+            href="/we"
           >
             عن الشركة{" "}
           </Link>
