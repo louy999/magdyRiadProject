@@ -18,11 +18,7 @@ const CarouselImg = () => {
   return (
     <div className="carousel w-full h-[70vh]">
       <div id="slide1" className="carousel-item relative w-full">
-        <Image
-          src={image1}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image1} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide12" className="btn btn-circle">
             ❮
@@ -33,11 +29,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide2" className="carousel-item relative w-full">
-        <Image
-          src={image2}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image2} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide1" className="btn btn-circle">
             ❮
@@ -48,11 +40,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide3" className="carousel-item relative w-full">
-        <Image
-          src={image3}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image3} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide2" className="btn btn-circle">
             ❮
@@ -63,11 +51,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide4" className="carousel-item relative w-full">
-        <Image
-          src={image4}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image4} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide3" className="btn btn-circle">
             ❮
@@ -78,11 +62,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide5" className="carousel-item relative w-full">
-        <Image
-          src={image5}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image5} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide4" className="btn btn-circle">
             ❮
@@ -93,11 +73,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide6" className="carousel-item relative w-full">
-        <Image
-          src={image6}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image6} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide4" className="btn btn-circle">
             ❮
@@ -108,11 +84,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide7" className="carousel-item relative w-full">
-        <Image
-          src={image7}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image7} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide6" className="btn btn-circle">
             ❮
@@ -123,11 +95,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide8" className="carousel-item relative w-full">
-        <Image
-          src={image8}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image8} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide6" className="btn btn-circle">
             ❮
@@ -138,11 +106,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide9" className="carousel-item relative w-full">
-        <Image
-          src={image9}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image9} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide8" className="btn btn-circle">
             ❮
@@ -153,11 +117,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide10" className="carousel-item relative w-full">
-        <Image
-          src={image10}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image10} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide9" className="btn btn-circle">
             ❮
@@ -168,11 +128,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide11" className="carousel-item relative w-full">
-        <Image
-          src={image11}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image11} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide10" className="btn btn-circle">
             ❮
@@ -183,11 +139,7 @@ const CarouselImg = () => {
         </div>
       </div>
       <div id="slide12" className="carousel-item relative w-full">
-        <Image
-          src={image12}
-          alt="1"
-          className="w-full object-contain bg-black/70"
-        />
+        <Image src={image12} alt="1" className="w-full  bg-black/70" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <Link href="#slide11" className="btn btn-circle">
             ❮
