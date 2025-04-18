@@ -8,8 +8,6 @@ const AboutCompany = () => {
       <Image
         alt=""
         src={imageCover}
-        width={1000}
-        hieght={1000}
         className="w-full left-0  h-[50vh] lg:h-[80vh]  absolute"
       />
       <div className="z-10  relative left-3/12 md:left-6/12 lg:left-8/12  rounded-lg ">

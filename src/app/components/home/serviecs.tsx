@@ -11,13 +11,7 @@ const ServiecsPage = () => {
         <div className="bg-[#5A9BD5] w-44 h-1 rounded-lg"></div>
       </div>
       <div className="flex justify-center lg:justify-between flex-wrap lg:flex-nowrap items-center gap-10 w-full p-4 lg:w-9/12 xl:w-8/12 ">
-        <Image
-          alt=""
-          src={image15}
-          width={1000}
-          hieght={1000}
-          className="w-96 h-96 rounded-lg"
-        />
+        <Image alt="" src={image15} className="w-96 h-96 rounded-lg" />
         <div className="text-black">
           تعتبر هذه الخدمة أحد أهم الخدمات والبنود التي تقوم الشركة التخصصية
           للمقاولات بتنفيذها حيث أننا نمتلك الدقة والأحتراف في مجال تقديم الحلول
