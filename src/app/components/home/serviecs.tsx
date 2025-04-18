@@ -8,7 +8,7 @@ const ServiecsPage = () => {
         <h1 className="w-full text-5xl text-center font-bold text-[#0B1F3A]">
           خدماتنا
         </h1>
-        <div className="bg-[#5A9BD5] w-44 h-1 rounded-lg"></div>
+        <div className="bg-[#FF3131] w-44 h-1 rounded-lg"></div>
       </div>
       <div className="flex justify-center lg:justify-between flex-wrap lg:flex-nowrap items-center gap-10 w-full p-4 lg:w-9/12 xl:w-8/12 ">
         <Image alt="" src={image15} className="w-96 h-96 rounded-lg" />
