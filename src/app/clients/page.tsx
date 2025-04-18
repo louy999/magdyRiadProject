@@ -8,7 +8,6 @@ import c3 from "../image/p3.svg";
 import c4 from "../image/p4.png";
 import c5 from "../image/p5.png";
 import c6 from "../image/p6.webp";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,14 +21,14 @@ const clients = [
   { img: c6, name: "شركة وادي النيل للمقاولات" },
 ];
 
-const testimonials = [
-  { img: c1, text: "شهادة من شركة تام اويل" },
-  { img: c2, text: "شهادة من شركة النصر للأعمال المدنية" },
-  { img: c3, text: "شهادة من شركة شيفكو للمقاولات" },
-  { img: c4, text: "شهادة من مكتب العربية للتصميمات" },
-  { img: c5, text: "شهادة من نادي الرياضات البحرية" },
-  { img: c6, text: "شهادة من شركة وادي النيل للمقاولات" },
-];
+// const testimonials = [
+//   { img: c1, text: "شهادة من شركة تام اويل" },
+//   { img: c2, text: "شهادة من شركة النصر للأعمال المدنية" },
+//   { img: c3, text: "شهادة من شركة شيفكو للمقاولات" },
+//   { img: c4, text: "شهادة من مكتب العربية للتصميمات" },
+//   { img: c5, text: "شهادة من نادي الرياضات البحرية" },
+//   { img: c6, text: "شهادة من شركة وادي النيل للمقاولات" },
+// ];
 
 const ClientsPage = () => {
   return (
@@ -74,32 +73,6 @@ const ClientsPage = () => {
       </div>
 
       {/* Testimonials Carousel using Swiper */}
-      <div className="bg-white">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative w-80 h-80 overflow-hidden group rounded-lg shadow-lg transition-all duration-300 hover:scale-105">
-                <Image
-                  src={testimonial.img}
-                  alt={`testimonial-${index}`}
-                  className="object-contain w-full h-full"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xl font-bold transition-opacity duration-300 text-center px-4">
-                  {testimonial.text}
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
     </div>
   );
 };
