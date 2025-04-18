@@ -24,14 +24,14 @@ const FooterPage = () => {
             <FaEnvelope className="text-[#5A9BD5]" />
           </div>
 
-          <div className="flex items-center justify-end gap-2 text-sm md:text-lg">
+          {/* <div className="flex items-center justify-end gap-2 text-sm md:text-lg">
             <span>شارع محمد علي، يشسيب من شايب</span>
             <FaMapMarkerAlt className="text-[#5A9BD5]" />
-          </div>
+          </div> */}
         </div>
 
         {/* Google Map */}
-        <div className="flex-1">
+        {/* <div className="flex-1">
           <Link
             href="https://www.google.com/maps/place/Cairo+Festival+City+Mall/@30.0218055,31.4154445,14z/data=!4m6!3m5!1s0x14583dd9f831b247:0xa7848c6a8c566be8!8m2!3d30.0288362!4d31.4075861!16s%2Fg%2F11f6k5qwql?entry=ttu"
             target="_blank"
@@ -43,7 +43,7 @@ const FooterPage = () => {
               className="rounded-md shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div className="text-center mt-8 text-sm text-gray-400">
