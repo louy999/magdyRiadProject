@@ -20,7 +20,7 @@ const OurPartaner = () => {
   return (
     <div className="px-4">
       <div className="w-full flex justify-center flex-wrap mb-8">
-        <h1 className="text-4xl border-b-4 px-8 py-4 border-b-[#5A9BD5] font-bold text-center">
+        <h1 className="text-4xl border-b-4 px-8 py-4 border-b-[#FF3131] font-bold text-center">
           شركاء النجاح
         </h1>
       </div>

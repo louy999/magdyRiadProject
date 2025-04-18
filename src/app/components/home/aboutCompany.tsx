@@ -25,7 +25,7 @@ const AboutCompany = () => {
           </p>
           <div className="w-full flex justify-end mt-10">
             <button className="btn btn-md lg:btn-lg xl:btn-xl bg-[#FF3131] text-white">
-              <Link href="/">تعرف علي المزيد</Link>
+              <Link href="/we">تعرف علي المزيد</Link>
             </button>
           </div>
         </div>

@@ -15,7 +15,7 @@ const WeAre = () => {
           alt="cover"
           className="fixed top-0 left-0 w-screen h-[50vh] object-cover -z-10"
         />
-        <div className="z-20 w-screen h-[50vh] text-white text-5xl font-bold flex justify-center items-center bg-black/40">
+        <div className="z-20 w-screen h-[50vh] text-white text-3xl md:text-5xl  font-bold flex justify-center items-center bg-black/40">
           شركة ماجتيك
         </div>
       </div>
