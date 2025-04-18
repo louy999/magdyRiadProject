@@ -1,8 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import map from "../../image/map.png";
-import Link from "next/link";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const FooterPage = () => {
   return (

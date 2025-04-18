@@ -29,9 +29,9 @@ const MobileNavBar = () => {
           <li className=" ">
             <Link href="/clients">عملاءنا</Link>
           </li>
-          <li className=" ">
+          {/* <li className=" ">
             <Link href="/contact">الاتصال بنا</Link>
-          </li>
+          </li> */}
         </ul>
       )}
     </div>

@@ -50,14 +50,14 @@ const Navbar = () => {
           </Link>
         </li> */}
 
-        <li>
+        {/* <li>
           <Link
             className="hover:text-2xl duration-300 hover:font-bold"
             href="/contact"
           >
             الاتصال بنا
           </Link>
-        </li>
+        </li> */}
       </ul>
       <MobileNavBar />
       <Logo />
