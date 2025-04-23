@@ -5,7 +5,7 @@ import MobileNavBar from "./mobileNavBar";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between md:fixed w-full md:w-3/4 lg:w-11/12 xl:w-2/4 md:top-4 md:left-2/4 md:-translate-x-2/4 bg-black/80 text-white  p-2 md:rounded-md text-xl z-50">
+    <div className="flex justify-between md:fixed w-full md:w-3/4 lg:w-11/12 xl:w-2/4 md:top-4 md:left-2/4 md:-translate-x-2/4 bg-black/80 text-white  p-2 md:rounded-md text-xl z-[7337]">
       <ul className="md:flex hidden gap-5 items-center text-sm lg:text-lg ">
         <li>
           <Link

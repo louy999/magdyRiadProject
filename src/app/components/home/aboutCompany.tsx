@@ -16,12 +16,11 @@ const AboutCompany = () => {
           <div className="bg-[#FF3131] w-48 h-1 rounded-lg"></div>
         </div>
         <div className="w-full flex  flex-wrap justify-end">
-          <p className="lg:w-1/4 md:w-2/4 w-3/4 text-[#0B1F3A] font-bold ">
-            تعتبر الشركة التخصصيه من أحد روافد الهندسة المدنية ، و تركز في
-            المقام الأول في عملها على البنية التحتية و المشاريع الراقية التي
-            تخدم الصالح العام و الخاص بأعلى كفاءة و جودة ممكنة . تتطلع الشركة
-            التخصصيه للمقاولات العامه إلى أن تكون إحدى الشركات الرائدة في مصر في
-            مجال المقاولات
+          <p className="lg:w-1/4 md:w-2/4 w-3/4 text-[#0B1F3A] bg-white/40 p-4 text-sm md:text-xl rounded-md m-1  font-bold ">
+            تعتبر شركة ماجتك للاساسات المكانيكية (م/مجدي رياض) من أحد رواد
+            الهندسة المدنية ، و تركز في المقام الأول في عملها على البنية التحتية
+            و المشاريع الراقية التي تخدم الصالح العام و الخاص بأعلى كفاءة و جودة
+            ممكنة .
           </p>
           <div className="w-full flex justify-end mt-10">
             <button className="btn btn-md lg:btn-lg xl:btn-xl bg-[#A12327] hover:bg-[#FF3131] text-white">

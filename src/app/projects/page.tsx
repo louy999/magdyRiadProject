@@ -35,7 +35,7 @@ const projects = [
     client: "شركة ابناء حسن علام ",
     piles: "غير محدد",
     diameter: "18 م - قطر 60سم",
-    image: project3,
+    image: project6,
   },
   {
     title: "كوبري حياة كريمة",
@@ -59,8 +59,7 @@ const projects = [
     client: "ادارة الهندسيه للمشيخة و مكتب استاذ دكتور /شادي دخان",
     piles: "70 خازوق",
     diameter: "17 م - قطر 60سم",
-
-    image: project6,
+    image: project3,
   },
   {
     title: "مقر الجديد لوزارة الإنتاج الحربي",
