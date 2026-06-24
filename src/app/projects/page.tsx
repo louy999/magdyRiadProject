@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
-import titls from "../image/title_image.jpg";
 import { MdEngineering } from "react-icons/md";
 
-// استبدل الصور المؤقتة دي بصور المشاريع الحقيقية
+import titleImage from "../image/title_image.jpg";
+
 import project1 from "../image/1.jpeg";
 import project2 from "../image/2.jpeg";
 import project3 from "../image/3.jpeg";
@@ -18,104 +20,170 @@ const projects = [
     year: "2020",
     client: "عدلي منصور",
     piles: "غير محدد",
-    diameter: "17 م - قطر 60 سم ",
+    diameter: "17 م - قطر 60 سم",
     image: project1,
   },
+
   {
     title: "تطوير المريوطية",
     year: "2022",
-    client: "اشراف مكتب محرم باخوم ومكتب  specturm ",
-    piles: "كباري 35 خازوق",
-    diameter: "18 م - قطر 60سم",
+    client: "مكتب محرم باخوم و Spectrum",
+    piles: "35 خازوق",
+    diameter: "18 م - قطر 60 سم",
     image: project2,
   },
+
   {
-    title: "توسعات كوبري الدائري",
+    title: "توسعات الطريق الدائري",
     year: "2022",
-    client: "شركة ابناء حسن علام ",
+    client: "أبناء حسن علام",
     piles: "غير محدد",
-    diameter: "18 م - قطر 60سم",
+    diameter: "18 م - قطر 60 سم",
     image: project6,
   },
+
   {
     title: "كوبري حياة كريمة",
-    client: "غير محدد",
     year: "2022",
+    client: "غير محدد",
     piles: "80 خازوق",
-    diameter: "18 م - قطر 60سم",
+    diameter: "18 م - قطر 60 سم",
     image: project7,
   },
+
   {
     title: "أفران مصنع حديد عز",
-    client: "غير محدد",
     year: "2022",
+    client: "غير محدد",
     piles: "غير محدد",
-    diameter: "16 م - قطر 60سم",
+    diameter: "16 م - قطر 60 سم",
     image: project5,
   },
+
   {
-    title: " بيت الزكاة المصري بمشيخة الازهر الشريف",
+    title: "بيت الزكاة المصري",
     year: "2023",
-    client: "ادارة الهندسيه للمشيخة و مكتب استاذ دكتور /شادي دخان",
+    client: "مشيخة الأزهر الشريف",
     piles: "70 خازوق",
-    diameter: "17 م - قطر 60سم",
+    diameter: "17 م - قطر 60 سم",
     image: project3,
   },
+
   {
-    title: "مقر الجديد لوزارة الإنتاج الحربي",
+    title: "وزارة الإنتاج الحربي",
     year: "2024",
     client: "غير محدد",
     piles: "58 خازوق",
-    diameter: "13 م – قطر 60 سم",
+    diameter: "13 م - قطر 60 سم",
+    image: project4,
+  },
+  {
+    title: "مشروع مترو ابو قير داخل محطة سيدي جابر بالاسكندريه",
+    year: "2026",
+    client: "غير محدد",
+    piles: "غير محدد",
+    diameter: "قطر40 سم 18م",
     image: project4,
   },
 ];
 
 const ProjectsApp = () => {
   return (
-    <div>
-      {/* Hero Section */}
-      <div className="relative h-[55vh]">
+    <section>
+      {/* Hero */}
+
+      <div className="relative h-[45vh] md:h-[55vh] overflow-hidden">
         <Image
-          src={titls}
-          alt="cover"
-          className="fixed top-0 left-0 w-screen h-[50vh] object-cover -z-10"
+          src={titleImage}
+          alt="projects"
+          fill
+          priority
+          className="object-cover"
         />
-        <div className="z-20 w-screen h-[50vh] text-white text-3xl md:text-5xl  font-bold flex justify-center items-center bg-black/40">
-          اهم المشروعات
-        </div>
+
+        <div className="absolute inset-0 bg-black/20" />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A]/30 to-black/10" />
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-5"
+        >
+          <p className="tracking-[6px] text-red-500 font-bold mb-4">
+            OUR PROJECTS
+          </p>
+
+          <h1 className="text-4xl md:text-6xl font-black">أهم المشروعات</h1>
+
+          <div className="w-28 h-1 bg-red-600 rounded-full mt-6"></div>
+        </motion.div>
       </div>
 
-      {/* Projects Cards */}
-      <div className="bg-white py-12 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((proj, idx) => (
-          <div
-            key={idx}
-            className="rounded-xl shadow-lg overflow-hidden border border-gray-200 flex flex-col"
-          >
-            <Image
-              src={proj.image}
-              alt={proj.title}
-              className="w-full h-60 object-cover"
-            />
-            <div className="p-4 text-right">
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                🏗️ {proj.title}
-              </h2>
-              <p className="text-gray-700 mb-1">📅 السنة: {proj.year}</p>
-              <p className="text-gray-700 mb-1 flex gap-1 items-center">
-                <MdEngineering />
-                العميل: {proj.client}
-              </p>
-              <p className="text-gray-700 mb-1">
-                🔢 عدد الخوازيق: {proj.piles}
-              </p>
-              <p className="text-gray-700">📏 الطول: {proj.diameter}</p>
-            </div>
-          </div>
-        ))}
+      {/* Cards */}
+
+      <div className="bg-slate-50 py-20 px-5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {projects.map((proj, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.08,
+              }}
+              whileHover={{
+                y: -10,
+              }}
+              className="group"
+            >
+              <div className="overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="overflow-hidden">
+                  <Image
+                    src={proj.image}
+                    alt={proj.title}
+                    className="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+                  />
+                </div>
+
+                <div className="p-7 text-right">
+                  <h2 className="text-2xl font-black text-[#0B1F3A] mb-6">
+                    {proj.title}
+                  </h2>
+
+                  <div className="space-y-3 text-gray-700">
+                    <p>
+                      📅 <span className="font-bold">السنة :</span> {proj.year}
+                    </p>
+
+                    <p className="flex justify-start items-center gap-2">
+                      <MdEngineering className="text-red-600 text-xl" />
+                      <span>
+                        <span className="font-bold ">العميل :</span>{" "}
+                        {proj.client}
+                      </span>
+                    </p>
+
+                    <p>
+                      🔢 <span className="font-bold">عدد الخوازيق :</span>{" "}
+                      {proj.piles}
+                    </p>
+
+                    <p>
+                      📏 <span className="font-bold">الأبعاد :</span>{" "}
+                      {proj.diameter}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
